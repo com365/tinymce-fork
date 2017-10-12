@@ -432,7 +432,7 @@ define(
         });
 
         controlElm = e.type == 'mousedown' ? e.target : selection.getNode();
-        controlElm = dom.$(controlElm).closest(isIE ? 'table' : 'table,img,hr')[0];
+        controlElm = dom.$(controlElm).closest(isIE ? 'table' : 'table,img,hr,figure.fast_fact')[0];
 
         if (isChildOrEqual(controlElm, rootElement)) {
           disableGeckoResize();
